@@ -1,0 +1,137 @@
+@layer reset, variables, styles, components, utilities;
+
+@layer reset {
+	/*
+		Josh's Custom CSS Reset
+		https://www.joshwcomeau.com/css/custom-css-reset/
+	*/
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+	* {
+		margin: 0;
+	}
+	body {
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+	}
+	img, picture, video, canvas, svg {
+		display: block;
+		max-width: 100%;
+	}
+	input, button, textarea, select {
+		font: inherit;
+	}
+	p, h1, h2, h3, h4, h5, h6 {
+		overflow-wrap: break-word;
+	}
+	a {
+		color: var(--color-primary);
+		text-underline-offset: 3px;
+		text-decoration-skip-ink: none;
+	}
+}
+
+@layer variables {
+	:root {
+		--color-primary: #473BF0;
+		--color-light: #FFFFFF;
+		--color-dark: #161C2D;
+		--font-sans: 'Be Vietnam Pro', sans-serif;
+	}
+}
+
+@layer components {
+	.btn {
+		border-radius: 8px;
+		padding-inline: 20px;
+		padding-block: 12px;
+	}
+	.btn--large {
+		padding: 21px;
+	}
+	.btn--primary {
+		color: var(--color-light);
+		background-color: var(--color-primary);
+	}
+}
+
+@layer styles {
+	html, body {
+		font-family: var(--font-sans);
+	}
+
+	.site-header {
+		position: sticky;
+		inset-block-start: 0;
+		inline-size: 100%;
+		background-color: var(--color-light);
+		z-index: 99;
+	}
+
+	.site-header__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 24px;
+		position: relative;
+		gap: 16px;
+	}
+
+	.site-header ul[role="navigation"] {
+		list-style-type: none;
+		padding-inline-start: 0;
+	}
+
+	.site-header ul[role="navigation"] > li a {
+		padding: 12px 24px;
+		display: block;
+	}
+
+	.site-header .logo {
+		font-size: 1.3rem;
+	}
+
+	.site-header a {
+		text-decoration: none;
+		color: var(--color-dark);
+		font-weight: 700;
+	}
+
+	.site-header__container > nav {
+		position: absolute;
+		inline-size: 100%;
+		inset-inline-start: 0;
+		inset-block-start: 100%;
+		background-color: var(--color-light);
+	}
+
+	@media screen and (min-width: 720px) {
+		.site-header {
+			background-color: #FFFFFFA1;
+		}
+
+		.site-header ul[role="navigation"] {
+			display: flex;
+			gap: 16px;
+		}
+
+		.site-header__container > nav {
+			position: static;
+			inline-size: auto;
+			background-color: transparent;
+		}
+
+		.site-header ul[role="navigation"] > li a {
+			padding: 0;
+			display: inline;
+		}
+	}
+}
+
+@layer utilities {
+	.text-xl {
+
+	}
+}
