@@ -7,12 +7,13 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=be-vietnam-pro:400,700" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="site-header__container">
         <a href="#!" class="logo">Brainwave.io</a>
-        <nav>
+        <nav id="header-nav">
           <ul role="navigation">
             <li><a href="#!">Demo</a></li>
             <li><a href="#!">Pages</a></li>
@@ -20,20 +21,29 @@
             <li><a href="#!">Contact</a></li>
           </ul>
         </nav>
-        <a href="#!" class="btn btn--primary">Get started free</a>
+        <div class="flex items-center justify-end" style="--gap: 8px">
+          <button type="button" class="burger">
+            <svg fill="none" viewBox="0 0 24 24" width="24" height="24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+            </svg>
+        </button>
+          <a href="#!" class="btn btn--primary">Get started free</a>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero">
         <h1>Get things done by awesome remote team</h1>
         <p>
           We share common trends and strategies for improving your rental income
           and making sure you stay in high demand.
         </p>
-        <a href="#!"class="btn btn--large">Get started free</a>
-        <a href="#!"class="btn btn--large">Learn more</a>
+        <div class="hero__actions">
+          <a href="#!" class="btn btn--primary btn--large">Get started free</a>
+          <a href="#!" class="btn btn--large">Learn more</a>
+        </div>
       </section>
-      <section>
+      <section class="screenshot">
         <img src="public/image.png" alt="" />
       </section>
       <section>
