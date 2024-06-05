@@ -11,7 +11,7 @@ Recréer la page disponible sur [ce fichier Figma](https://www.figma.com/design/
 3. Faire vos modifications
 4. Effectuer des `git commit` aux moments qui vous paraissent les plus opportuns
 5. Effectuer un `git push` sur votre repository personnel
-6. M'envoyer le lien de votre repository une fois le challenge terminé sor votre channel discord privé sur entraidev
+6. M'envoyer le lien de votre repository une fois le challenge terminé sur votre channel discord privé sur entraidev
 
 ## Infos supplémentaires
 
