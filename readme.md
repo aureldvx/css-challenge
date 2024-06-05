@@ -6,7 +6,7 @@ Recréer la page disponible sur [ce fichier Figma](https://www.figma.com/design/
 
 ## Fonctionnement
 
-1. Cliquer sur le bouton "Use this template" en haut de cette page pour créer ce repository sur votre compte personnel
+1. Cliquer sur le bouton "Use this template" > "Create a new repository" en haut de cette page pour créer ce repository sur votre compte personnel
 2. Cloner votre nouveau repository avec `git clone` sur votre ordinateur
 3. Faire vos modifications
 4. Effectuer des `git commit` aux moments qui vous paraissent les plus opportuns
